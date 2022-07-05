@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4824AC5C28728AA60056779D /* Fun-With-Cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Fun-With-Cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4824AC5F28728AA60056779D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		48CA9EEB287355A400470577 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +42,7 @@
 		4824AC5328728AA60056779D = {
 			isa = PBXGroup;
 			children = (
-				4824AC5E28728AA60056779D /* Fun-With-Cpp */,
+				4824AC5E28728AA60056779D /* HashTable */,
 				4824AC5D28728AA60056779D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +55,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4824AC5E28728AA60056779D /* Fun-With-Cpp */ = {
+		4824AC5E28728AA60056779D /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
+				48CA9EEB287355A400470577 /* header.h */,
 				4824AC5F28728AA60056779D /* main.cpp */,
 			);
-			path = "Fun-With-Cpp";
+			path = HashTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
