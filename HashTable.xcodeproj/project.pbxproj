@@ -54,8 +54,7 @@
 		4824AC5328728AA60056779D = {
 			isa = PBXGroup;
 			children = (
-				48CA9EEB287355A400470577 /* header.h */,
-				4824AC5F28728AA60056779D /* main.cpp */,
+				4837930D287560E300BFCF57 /* HashTable */,
 				4802123B28756099006B6376 /* Recursion */,
 				4802123A28756099006B6376 /* Recursion-1.cpp */,
 				4824AC5D28728AA60056779D /* Products */,
@@ -68,6 +67,15 @@
 				4824AC5C28728AA60056779D /* Fun-With-Cpp */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4837930D287560E300BFCF57 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				48CA9EEB287355A400470577 /* header.h */,
+				4824AC5F28728AA60056779D /* main.cpp */,
+			);
+			path = HashTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
