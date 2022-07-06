@@ -107,7 +107,7 @@ class HashMapTable {
     void printAll(){
         
         int i = 0;
-        cout << "THIS IS YOUR CURRENT TABLE...\n";
+        cout << "\nTHIS IS YOUR CURRENT TABLE...\n";
         while(i<maxSize){
             if(t[i] != NULL){
              
@@ -115,7 +115,7 @@ class HashMapTable {
             }
             i++;
         }
-     
+        cout << "\n\n\n";
         
         
     }
