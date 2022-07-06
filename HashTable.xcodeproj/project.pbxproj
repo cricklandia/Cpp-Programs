@@ -42,7 +42,8 @@
 		4824AC5328728AA60056779D = {
 			isa = PBXGroup;
 			children = (
-				4824AC5E28728AA60056779D /* HashTable */,
+				48CA9EEB287355A400470577 /* header.h */,
+				4824AC5F28728AA60056779D /* main.cpp */,
 				4824AC5D28728AA60056779D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,15 +54,6 @@
 				4824AC5C28728AA60056779D /* Fun-With-Cpp */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4824AC5E28728AA60056779D /* HashTable */ = {
-			isa = PBXGroup;
-			children = (
-				48CA9EEB287355A400470577 /* header.h */,
-				4824AC5F28728AA60056779D /* main.cpp */,
-			);
-			path = HashTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +90,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4824AC5728728AA60056779D /* Build configuration list for PBXProject "Fun-With-Cpp" */;
+			buildConfigurationList = 4824AC5728728AA60056779D /* Build configuration list for PBXProject "HashTable" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,7 +252,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4824AC5728728AA60056779D /* Build configuration list for PBXProject "Fun-With-Cpp" */ = {
+		4824AC5728728AA60056779D /* Build configuration list for PBXProject "HashTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4824AC6128728AA60056779D /* Debug */,
