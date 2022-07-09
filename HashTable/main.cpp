@@ -21,7 +21,7 @@
 //   int key, value;
 //   int choice;
 //    cout<<"WELCOME TO MY C++ HASH TABLE PROGRAM"<<endl;
-//   while (1) {
+//   while (true) {
 //       
 //      cout<<"1. Insert/overwrite a value"<<endl;
 //      cout<<"2. Search value by key"<<endl;

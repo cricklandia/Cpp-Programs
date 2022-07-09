@@ -10,6 +10,7 @@
 		4802123E28756099006B6376 /* Recursion-1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4802123C28756099006B6376 /* Recursion-1.cpp */; };
 		4813A8D42877F52100101A7D /* Recursion-Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4813A8D32877F52100101A7D /* Recursion-Fibonacci.cpp */; };
 		4824AC6028728AA60056779D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4824AC5F28728AA60056779D /* main.cpp */; };
+		4863E4F5287930FB009657F1 /* dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4863E4F3287930FB009657F1 /* dice.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		4813A8D32877F52100101A7D /* Recursion-Fibonacci.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Recursion-Fibonacci.cpp"; sourceTree = "<group>"; };
 		4824AC5C28728AA60056779D /* Fun-With-Cpp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Fun-With-Cpp"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4824AC5F28728AA60056779D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4863E4F3287930FB009657F1 /* dice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dice.cpp; sourceTree = "<group>"; };
+		4863E4F4287930FB009657F1 /* dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dice.hpp; sourceTree = "<group>"; };
 		48CA9EEB287355A400470577 /* header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +58,7 @@
 		4824AC5328728AA60056779D = {
 			isa = PBXGroup;
 			children = (
+				4863E4F62879312F009657F1 /* Dice */,
 				4837930D287560E300BFCF57 /* HashTable */,
 				4802123B28756099006B6376 /* Recursion */,
 				4824AC5D28728AA60056779D /* Products */,
@@ -76,6 +80,15 @@
 				4824AC5F28728AA60056779D /* main.cpp */,
 			);
 			path = HashTable;
+			sourceTree = "<group>";
+		};
+		4863E4F62879312F009657F1 /* Dice */ = {
+			isa = PBXGroup;
+			children = (
+				4863E4F4287930FB009657F1 /* dice.hpp */,
+				4863E4F3287930FB009657F1 /* dice.cpp */,
+			);
+			path = Dice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +150,7 @@
 			files = (
 				4802123E28756099006B6376 /* Recursion-1.cpp in Sources */,
 				4813A8D42877F52100101A7D /* Recursion-Fibonacci.cpp in Sources */,
+				4863E4F5287930FB009657F1 /* dice.cpp in Sources */,
 				4824AC6028728AA60056779D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
