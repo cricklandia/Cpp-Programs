@@ -29,9 +29,9 @@ void compareArrays(int attack[], int defend[]){
     for(int i=0; i < 2; i++){
         if(defend[i] == 0)
             break;
-        if(attack[i] > defend[i])
-            defenderLoses++;
-        else attackerLoses++;
+        if(defend[i] >= attack[i])//defender wins ties
+            attackerLoses++;
+        else defenderLoses++;
     }
     cout << "Attacker loses: " << attackerLoses << " armies.\n";
     cout << "Defender loses: " << defenderLoses << " armies.\n";
@@ -52,33 +52,34 @@ int main() {
     cout<<"RISK\n";
     cout<<"Attacker: how many dice will you roll? (1 - 3)\n";
     cin >> attackDice;
+    cout<<"Defender: how many dice will you roll? (1 - 2)\n";
+    cin >> defendDice;
           switch(attackDice) {
              case 1:
-                  cout<<"attacker throws 1" << endl;
+                  cout<<"ATTACKER throws 1 die\n" << endl;
                       attackArray[0] = attackerA.roll();
                 
                   break;
               case 2:
-                  cout<<"attacker throws 2" << endl;
+                  cout<<"ATTACKER throws 2 dice\n" << endl;
                       attackArray[0] = attackerA.roll();
                       attackArray[1] = attackerB.roll();
                   break;
               case 3:
-                  cout<<"attacker throws 3" << endl;;
+                  cout<<"ATTACKER throws 3 dice\n" << endl;;
                       attackArray[0] = attackerA.roll();
                       attackArray[1] = attackerB.roll();
                       attackArray[2] = attackerC.roll();
                   break;
           }
-    cout<<"Defender: how many dice will you roll? (1 - 2)\n";
-    cin >> defendDice;
+    cout << endl;
     switch(defendDice) {
        case 1:
-            cout<<"defender throws 1" << endl;
+            cout<<"DEFENDER throws 1 die\n" << endl;
                 defendArray[0] = defenderA.roll();
             break;
         case 2:
-            cout<<"defender throws 2" << endl;
+            cout<<"DEFENDER throws 2 dice\n" << endl;
                 defendArray[0] = defenderA.roll();
                 defendArray[1] = defenderB.roll();
             break;
@@ -87,9 +88,10 @@ int main() {
     bubbleSort(attackArray, attackDice);
     bubbleSort(defendArray, defendDice);
     compareArrays(attackArray, defendArray);
+    cout << endl;
     
     
     
-    
+    return 0;
 }
 
