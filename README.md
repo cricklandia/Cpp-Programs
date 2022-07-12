@@ -1,7 +1,5 @@
 # Cpp-Programs
-reworking old university assignments
-
-a repo for keeping up my programming chops
+Keeping up my C++ chops...
 
 Throwing dice is more fun, but this program will save some time...
 
