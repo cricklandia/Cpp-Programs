@@ -9,7 +9,7 @@
 //#include<cstdlib>
 //#include<string>
 //#include<cstdio>
-//#include "hash.h"
+//#include "Hash.h"
 //
 //
 //using namespace std;
