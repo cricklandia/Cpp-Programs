@@ -5,9 +5,9 @@
 //  Created by Christopher Strickland on 7/4/22.
 //
 
-//#ifndef header_h
-//#define header_h
-//#endif /* header_h */
+#ifndef header_h
+#define header_h
+#endif /* header_h */
 #include<iostream>
 
 using namespace std;

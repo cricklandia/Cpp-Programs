@@ -35,7 +35,7 @@
 		4827E330287CA31D00135CCB /* Prime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Prime.hpp; sourceTree = "<group>"; };
 		4863E4F3287930FB009657F1 /* Risk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Risk.cpp; sourceTree = "<group>"; };
 		4863E4F4287930FB009657F1 /* Dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dice.hpp; sourceTree = "<group>"; };
-		48CA9EEB287355A400470577 /* Hash.hpp~main */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = "Hash.hpp~main"; sourceTree = "<group>"; };
+		48CA9EEB287355A400470577 /* Hash.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Hash.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		4837930D287560E300BFCF57 /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
-				48CA9EEB287355A400470577 /* Hash.hpp~main */,
+				48CA9EEB287355A400470577 /* Hash.hpp */,
 				4824AC5F28728AA60056779D /* Hash.cpp */,
 			);
 			path = HashTable;
