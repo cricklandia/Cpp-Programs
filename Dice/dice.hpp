@@ -5,8 +5,8 @@
 //  Created by Christopher Strickland on 7/8/22.
 //
 
-#ifndef dice_hpp
-#define dice_hpp
+#ifndef Dice_hpp
+#define Dice_hpp
 
 #include <stdio.h>
 #include<iostream>
