@@ -18,7 +18,7 @@ using namespace std;
 
 #endif /* dice_hpp */
 
-class dice {
+class Dice {
 
 //private:
 
@@ -27,8 +27,8 @@ public:
     int sides;
     int top;
 
-    //initializer
-    dice(int sides){
+    //constructor
+    Dice(int sides){
         this->sides = sides;
 
         //cout << "You just created a die object with " << sides << " sides.\n\n";

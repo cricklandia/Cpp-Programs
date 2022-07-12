@@ -4,8 +4,10 @@
 //
 //  Created by Christopher Strickland on 7/8/22.
 //
+//  Need to store all rolls and stats data in hash object
+//  Need to ask for continue option after roll is complete, and battleCount++
 
-#include "dice.hpp"
+#include "Dice.hpp"
 #include <stdio.h>
 #include<iostream>
 #include <time.h>
@@ -42,10 +44,11 @@ int main() {
     
     
 
-    dice attackerA(6), attackerB(6), attackerC(6);
-    dice defenderA(6), defenderB(6);
+    Dice attackerA(6), attackerB(6), attackerC(6);
+    Dice defenderA(6), defenderB(6);
     int attackDice, defendDice;
     int attackArray[attackDice], defendArray[defendDice];
+    int battleCount, choice;
     srand(time(NULL));
     
 cout << R"(
@@ -55,26 +58,37 @@ cout << R"(
    |  _ < | | ___) | . \
    |_| \_\___|____/|_|\_\)"
     << endl << endl;
+    cout << "Battle # " << battleCount++ << endl;
     cout<<"Attacker: how many dice will you roll? (1 - 3)\n";
     cin >> attackDice;
+    while(attackDice < 1 || attackDice > 3){
+        cout << "only enter 1, 2, or 3\n";
+        cin >> attackDice;
+    }
     cout<<"Defender: how many dice will you roll? (1 - 2)\n";
     cin >> defendDice;
+    while(defendDice < 1 || defendDice > 2){
+        cout << "only enter 1 or 2\n";
+        cin >> defendDice;
+    }
           switch(attackDice) {
              case 1:
                   cout<<"ATTACKER throws 1 die\n" << endl;
                       attackArray[0] = attackerA.roll();
-                
+                  //attackArray.sort() //future method in dice class
                   break;
               case 2:
                   cout<<"ATTACKER throws 2 dice\n" << endl;
                       attackArray[0] = attackerA.roll();
                       attackArray[1] = attackerB.roll();
+                  //attackArray.sort() //future method in dice class
                   break;
               case 3:
                   cout<<"ATTACKER throws 3 dice\n" << endl;;
                       attackArray[0] = attackerA.roll();
                       attackArray[1] = attackerB.roll();
                       attackArray[2] = attackerC.roll();
+                      //attackArray.sort() //future method in dice class
                   break;
           }
     cout << endl;
@@ -82,14 +96,17 @@ cout << R"(
        case 1:
             cout<<"DEFENDER throws 1 die\n" << endl;
                 defendArray[0] = defenderA.roll();
+                //defendArray.sort() //future method in dice class
             break;
         case 2:
             cout<<"DEFENDER throws 2 dice\n" << endl;
                 defendArray[0] = defenderA.roll();
                 defendArray[1] = defenderB.roll();
+                //defendArray.sort() //future method in dice class
             break;
     }
     cout << "\n\nResults...\n\n";
+    //below needs to be transitioned to dice class..
     bubbleSort(attackArray, attackDice);
     bubbleSort(defendArray, defendDice);
     compareArrays(attackArray, defendArray);
