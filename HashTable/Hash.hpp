@@ -3,7 +3,7 @@
 //  Fun-With-Cpp
 //
 //  Created by Christopher Strickland on 7/4/22.
-//
+//  updated class name
 
 #ifndef Hash.hpp
 #define Hash.hpp
