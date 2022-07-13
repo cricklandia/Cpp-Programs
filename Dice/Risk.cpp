@@ -7,7 +7,7 @@
 //  Need to store all rolls and stats data in hash object
 //  Need to ask for continue option after roll is complete, and battleCount++;
 
-#include "Dice.hpp"
+#include "dice.hpp"
 #include <stdio.h>
 #include<iostream>
 #include <time.h>
