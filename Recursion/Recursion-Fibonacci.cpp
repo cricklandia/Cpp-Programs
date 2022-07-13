@@ -10,8 +10,8 @@
 //using namespace std;
 //
 //
-//void fib(int a, int b){
-//    if(b >= 1000)
+//void fib(long long a, long long b){
+//    if(b >= 1000000000)
 //    {
 //        return;
 //    }
