@@ -42,17 +42,23 @@ void compareArrays(int attack[], int defend[]){
 
 int main() {
     
-    
-
     Dice attackerA(6), attackerB(6), attackerC(6);
     Dice defenderA(6), defenderB(6);
+    Coin silverDollar;
+    Spinner candyLand;
     int attackDice, defendDice;
     int attackArray[attackDice], defendArray[defendDice];
-    int battleCount = 1, choice;
+    int battleCount = 1, choice, rollTime = 2;
+    
     srand(time(NULL));
     
-
+    //example of polymorphism: same method name for two different derived classes (Coin & Spinner derived from Dice)
+    silverDollar.getSides();
+    candyLand.getSides();
+    attackerA.getSides();
+    
     while(true){
+        
         cout << R"(
             ____  ___ ____  _  __
            |  _ \|_ _/ ___|| |/ /
@@ -76,19 +82,25 @@ int main() {
           switch(attackDice) {
              case 1:
                   cout<<"ATTACKER throws 1 die\n" << endl;
+                  sleep(rollTime);
                       attackArray[0] = attackerA.roll();
                   //attackArray.sort() //future method in dice class
                   break;
               case 2:
                   cout<<"ATTACKER throws 2 dice\n" << endl;
+                  sleep(rollTime);
                       attackArray[0] = attackerA.roll();
+                  sleep(rollTime);
                       attackArray[1] = attackerB.roll();
                   //attackArray.sort() //future method in dice class
                   break;
               case 3:
-                  cout<<"ATTACKER throws 3 dice\n" << endl;;
+                  cout<<"ATTACKER throws 3 dice\n" << endl;
+                  sleep(2);
                       attackArray[0] = attackerA.roll();
+                  sleep(2);
                       attackArray[1] = attackerB.roll();
+                  sleep(2);
                       attackArray[2] = attackerC.roll();
                       //attackArray.sort() //future method in dice class
                   break;
@@ -97,13 +109,17 @@ int main() {
     switch(defendDice) {
        case 1:
             cout<<"DEFENDER throws 1 die\n" << endl;
+            sleep(rollTime);
                 defendArray[0] = defenderA.roll();
                 //defendArray.sort() //future method in dice class
             break;
         case 2:
             cout<<"DEFENDER throws 2 dice\n" << endl;
+            sleep(rollTime);
                 defendArray[0] = defenderA.roll();
+            sleep(rollTime);
                 defendArray[1] = defenderB.roll();
+            sleep(rollTime);
                 //defendArray.sort() //future method in dice class
             break;
     }
@@ -116,15 +132,19 @@ int main() {
         cout<<"What would you like to do next?\n";
         cout<<"1. Roll again!"<<endl;
         cout<<"2. I'm done."<<endl;
+        cout<<"3. See stats."<<endl;
         cin >> choice;
         switch(choice) {
     case 1:
         //loop again
                 battleCount++;
                 break;
-            case 2:
+    case 2:
                 cout << "C e a s e   f i r e ! \n\n";
                 exit(0);
+    case 3:
+                //printStats();
+                break;
         }
     }
     //exit

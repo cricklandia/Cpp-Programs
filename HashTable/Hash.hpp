@@ -7,7 +7,7 @@
 
 #ifndef Hash_hpp
 #define Hash_hpp
-#endif /* Hash_hpp */
+
 #include<iostream>
 
 using namespace std;
@@ -134,4 +134,4 @@ class HashMapTable {
     }
 };
 
-
+#endif /* Hash_hpp */

@@ -36,6 +36,7 @@
 		4827E330287CA31D00135CCB /* Prime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Prime.hpp; sourceTree = "<group>"; };
 		4863E4F3287930FB009657F1 /* Risk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Risk.cpp; sourceTree = "<group>"; };
 		4863E4F4287930FB009657F1 /* dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dice.hpp; sourceTree = "<group>"; };
+		4868B18C287FD06D00B2ED2C /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		489AE2D2287F839300644B8D /* LinkedList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedList.cpp; sourceTree = "<group>"; };
 		489AE2D3287F839300644B8D /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		48CA9EEB287355A400470577 /* Hash.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Hash.hpp; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		4863E4F62879312F009657F1 /* Dice */ = {
 			isa = PBXGroup;
 			children = (
+				4868B18C287FD06D00B2ED2C /* Game.h */,
 				4863E4F4287930FB009657F1 /* dice.hpp */,
 				4863E4F3287930FB009657F1 /* Risk.cpp */,
 			);

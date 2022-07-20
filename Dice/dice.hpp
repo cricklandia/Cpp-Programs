@@ -8,6 +8,7 @@
 #ifndef dice_hpp
 #define dice_hpp
 
+
 #include <stdio.h>
 #include<iostream>
 #include <time.h>
@@ -17,7 +18,7 @@
 
 using namespace std;
 
-#endif /* Dice_hpp */
+
 
 class Dice {
 
@@ -27,7 +28,11 @@ class Dice {
 public:
     int sides;
     int top;
-
+    //default constructor
+    Dice(){
+        sides = 6;
+    }
+    
     //constructor
     Dice(int sides){
         this->sides = sides;
@@ -46,6 +51,17 @@ public:
         dicePrinter(top);
         this->top = top;
         return top;
+    }
+    
+    void printStats(){
+        
+        cout << "Below are the game stats:";
+        
+        
+    }
+    
+    void getSides(){
+        cout << "This DIE object has " << sides << " sides.\n";
     }
     
     void dicePrinter(int top){
@@ -145,6 +161,31 @@ public:
 
 };
 
+//inheritance - Coin is a derived class of Dice
+class Coin: public Dice{
+    
+    public:
+        Coin(){
+            sides = 2;
+        }
+        void getSides(){
+            cout << "This COIN object has " << sides << " sides.\n";
+        }
+    
+};
+//inheritance - Spinner is a derived class of Dice
+class Spinner: public Dice{
+    
+    public:
+        Spinner(){
+            sides = 10;
+        }
+        void getSides(){
+            cout << "This SPINNER object has " << sides << " sides...and because we are demonstrating polymorphism we can show that when you call the getSides() method on a Spinner object you get a little extra text...\n";
+            
+        }
+};
+#endif /* dice_hpp */
 
 
 
